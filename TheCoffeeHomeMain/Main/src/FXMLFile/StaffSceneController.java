@@ -999,7 +999,7 @@ public class StaffSceneController implements Initializable {
             } else if (!Pattern.matches("\\d{1,}", tfDishPrice.getText())) {
                 alert("Please fill DishPrice in right form");
             } else if (cbDishIngredient.getValue() == null) {
-                alert("Please fill DishIngredient");
+                alert("Please fill DishIngredient,Tool");
             } else if (!Pattern.matches("\\d{1,}", tfDishConsume.getText())) {
                 alert("Please fill DishConsume in right form");
             } else if (cbDishCatalogies.getValue() == null) {
@@ -1778,9 +1778,9 @@ public class StaffSceneController implements Initializable {
         window.show();
     }
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-    private static final String[] possition = {"Manager", "Supervisor", "Waiter"};
-    private static final String[] role = {"Manager", "Supervisor", "Waiter", "Customer"};
-    private static final String[] productCatalogies = {"Ingredient,Tool"};
+    private static final String[] possition = {"Manager", "Supervisor", "Cashier"};
+    private static final String[] role = {"Manager", "Supervisor", "Cashier", "Customer"};
+    private static final String[] productCatalogies = {"Ingredient","Tool"};
     private static final String[] dishCatalogies = {"Coffee","Tea","Ice Blended","Cake"};
     private static final String[] dishStatus = {"Available", "Unavailable"};
     private static final String[] gender = {"Male", "Female"};

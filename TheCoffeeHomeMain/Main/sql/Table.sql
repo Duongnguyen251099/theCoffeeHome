@@ -48,7 +48,7 @@ create table Menu(
   dishConsume int,
   dishCatalogies varchar(30),
   dishStatus varchar(11),
-  dishDescription varchar(255),
+  dishDescription varchar(max),
   dishImage image
 );
 go

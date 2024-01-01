@@ -277,7 +277,7 @@ public class LoginController implements Initializable {
                     case "Supervisor" -> {
                         getSupervisorScene("/FXMLFile/StaffScene.fxml", "Staff");
                     }
-                    case "Waiter" -> {
+                    case "Cashier" -> {
                         getWaiterScene("/FXMLFile/StaffScene.fxml", "Staff");
                     }
                     case "Customer" -> {
